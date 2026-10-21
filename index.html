@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="The Dreamer's Garden — a little corner of the world for poetry, dreams, and self-discovery."
+  />
+  <title>The Dreamer's Garden | Between Dreams & Lines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">between dreams <span>&</span> lines</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#collection">Poetry</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle colour theme">
+      ☾
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-decoration decoration-one">✿</div>
+      <div class="hero-decoration decoration-two">✧</div>
+
+      <p class="eyebrow">A LITTLE CORNER OF THE UNIVERSE</p>
+
+      <h1>Welcome to the<br /><em>Dreamer's Garden.</em></h1>
+
+      <p class="hero-description">
+        For the words we couldn't say, the dreams we dare to dream,
+        and the versions of ourselves we're still becoming.
+      </p>
+
+      <a href="#collection" class="primary-button">Wander through the poems <span>↗</span></a>
+
+      <p class="hero-note">grown with love, written with feeling ♡</p>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+      <p id="daily-quote">Somewhere between who you were and who you will be, there is you.</p>
+      <button id="quote-button" class="text-button">A little more inspiration ↻</button>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WORDS FROM THE HEART</p>
+          <h2>A garden of <em>thoughts.</em></h2>
+        </div>
+        <p class="section-intro">Every poem is a little world of its own.<br />Find one that feels like yours.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All words</button>
+        <button class="filter" data-filter="growth">Growing up</button>
+        <button class="filter" data-filter="myth">Myth & magic</button>
+        <button class="filter" data-filter="self">Finding myself</button>
+      </div>
+
+      <div class="poem-grid" id="poem-grid">
+        <!-- Poetry cards are created by script.js -->
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-flower" aria-hidden="true">❀</div>
+      <p class="eyebrow">A NOTE FROM THE AUTHOR</p>
+      <h2>Between dreams<br />and <em>lines.</em></h2>
+      <p>
+        A space for all the things that live quietly inside us.
+        Here, feelings find words, memories become verses, and
+        growing up becomes a little less lonely.
+      </p>
+      <p class="signature">with love, always ♡</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Between Dreams & Lines</p>
+    <p>made of words, wonder & a little wildflower magic ✿</p>
+  </footer>
+
+  <dialog id="poem-dialog" class="poem-dialog">
+    <button id="close-dialog" class="close-dialog" aria-label="Close poem">×</button>
+    <p class="eyebrow" id="dialog-category"></p>
+    <h2 id="dialog-title"></h2>
+    <div id="dialog-poem" class="dialog-poem"></div>
+    <button id="favorite-button" class="primary-button favorite-button">♡ Save to favorites</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
