@@ -67,7 +67,7 @@ npm run build
 
 ## 🌐 Live Demo
 
-**Live Website:** Add your deployed website URL here.
+**Live Website:** [https://mahi287srivastava-maker.github.io/Personal-portfolio/#about]
 
 ## 📁 Project Structure
 
